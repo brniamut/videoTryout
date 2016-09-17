@@ -1,0 +1,11 @@
+<div class="grid--item--content" ng-style="{'background-image':'url(' + $ctrl.data.player.posterUrl + ')'}" ui-sref="video({url: $ctrl.data.player.stream.vodUrl, name: $ctrl.data.player.name})">
+</div>
+<div ng-if="$ctrl.data.player" class="grid--item--data">
+  <p class="name">
+    {{$ctrl.data.player.name}}
+  </p>
+  <p class="date">
+    {{$ctrl.data.player.createdOn | date}}
+  </p>
+</div>
+
